@@ -1,3 +1,4 @@
+menu.edition=Edition
 
 ##############################################################
 star_otto.name=Arduino Star OTTO
@@ -18,16 +19,46 @@ star_otto.upload.mem_start=0x08000000
 star_otto.upload.usbID=0483:DF11
 star_otto.upload.altID=0
 
-star_otto.build.mcu=cortex-m4
-star_otto.build.board=STM32_STAR_OTTO
-star_otto.build.f_cpu=180000000L
-star_otto.build.core=arduino
-star_otto.build.esp_ch_uart_br=460800
-star_otto.build.extra_flags=-DSTM32F469xx -DMCU_STM32F469NI -mthumb -DSTM32_HIGH_DENSITY -DESP_CH_UART -DESP_CH_UART_BR={build.esp_ch_uart_br}
-star_otto.build.ldscript=link-tools/jtag.ld
-star_otto.build.variant=otto
-star_otto.build.variant_system_lib=libstm32f4_otto_gcc_rel.a
-star_otto.build.vect=VECT_TAB_BASE
-star_otto.build.density=STM32_HIGH_DENSITY
+#star_otto.build.mcu=cortex-m4
+#star_otto.build.board=STM32_STAR_OTTO
+#star_otto.build.f_cpu=180000000L
+#star_otto.build.core=arduino
+#star_otto.build.esp_ch_uart_br=460800
+#star_otto.build.extra_flags=-DSTM32F469xx -DMCU_STM32F469NI -mthumb -DSTM32_HIGH_DENSITY -DESP_CH_UART -DESP_CH_UART_BR={build.esp_ch_uart_br}
+#star_otto.build.ldscript=link-tools/jtag.ld
+#star_otto.build.variant=otto
+#star_otto.build.variant_system_lib=libstm32f4_otto_gcc_rel.a
+#star_otto.build.vect=VECT_TAB_BASE
+#star_otto.build.density=STM32_HIGH_DENSITY
 
 ##############################################################
+
+## Start Otto Standard Edition
+## --------------------------------------------------
+star_otto.menu.edition.standard=Standard
+star_otto.menu.edition.standard.build.mcu=cortex-m4
+star_otto.menu.edition.standard.build.board=STM32_STAR_OTTO
+star_otto.menu.edition.standard.build.f_cpu=180000000L
+star_otto.menu.edition.standard.build.core=arduino
+star_otto.menu.edition.standard.build.esp_ch_uart_br=460800
+star_otto.menu.edition.standard.build.extra_flags=-DSTM32F469xx -DMCU_STM32F469NI -mthumb -DSTM32_HIGH_DENSITY -DESP_CH_UART -DESP_CH_UART_BR={build.esp_ch_uart_br}
+star_otto.menu.edition.standard.build.ldscript=link-tools/jtag.ld
+star_otto.menu.edition.standard.build.variant=otto
+star_otto.menu.edition.standard.build.variant_system_lib=libstm32f4_otto_gcc_rel.a
+star_otto.menu.edition.standard.build.vect=VECT_TAB_BASE
+star_otto.menu.edition.standard.build.density=STM32_HIGH_DENSITY
+
+## Star Otto Developer Edition
+## --------------------------------------------------
+star_otto.menu.edition.developer=Developer
+star_otto.menu.edition.developer.build.mcu=cortex-m4
+star_otto.menu.edition.developer.build.board=STM32_STAR_OTTO_DEV_ED
+star_otto.menu.edition.developer.build.f_cpu=180000000L
+star_otto.menu.edition.developer.build.core=arduino
+star_otto.menu.edition.developer.build.esp_ch_uart_br=460800
+star_otto.menu.edition.developer.build.extra_flags=-DSTM32F469xx -DMCU_STM32F469NI -mthumb -DSTM32_HIGH_DENSITY -DESP_CH_UART -DESP_CH_UART_BR={build.esp_ch_uart_br}
+star_otto.menu.edition.developer.build.ldscript=link-tools/jtag.ld
+star_otto.menu.edition.developer.build.variant=otto
+star_otto.menu.edition.developer.build.variant_system_lib=libstm32f4_otto_gcc_rel.a
+star_otto.menu.edition.developer.build.vect=VECT_TAB_BASE
+star_otto.menu.edition.developer.build.density=STM32_HIGH_DENSITY
